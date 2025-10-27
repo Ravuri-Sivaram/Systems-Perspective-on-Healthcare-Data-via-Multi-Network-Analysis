@@ -1,0 +1,9 @@
+pandas==2.2.2
+numpy==1.26.4
+matplotlib==3.9.2
+seaborn==0.13.2
+networkx==3.2.1
+tqdm==4.66.4
+pyvis==0.3.2
+python-louvain==0.16
+ipython==8.25.0
