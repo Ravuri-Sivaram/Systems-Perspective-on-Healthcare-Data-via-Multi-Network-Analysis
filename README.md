@@ -38,9 +38,32 @@ Explores how diseases correlate with demographic and cardiovascular risk factors
 ---
 
 ## 📈 Results & Insights  
-- Over **3,500 strong co-occurrence edges** among ~229 conditions.  
-- Detected **high-degree nodes** representing dominant conditions and treatment hubs.  
-- Interactive visualizations generated using **PyVis** (`.html` files).  
+
+### 🧩 1. Condition–Drug Bipartite Network  
+- **Extreme Centralization:** The condition *“Transplanted lung present”* emerged as a dominant hub with a weighted degree exceeding **12 million**, indicating strong drug connectivity.  
+- **Bridging Edges:** Drug–condition pairs such as *“Primary malignant neoplasm of female breast”* and opioid-based treatments showed high betweenness, acting as critical connectors across medical domains.  
+- **Clinical Insight:** Highly centralized nodes correspond to complex, multi-drug regimens, revealing polypharmacy risks and treatment dependencies for chronic or transplant patients.  
+
+---
+
+### 🔗 2. Condition–Condition Co-occurrence Network  
+- **Threshold Impact:** Increasing the co-occurrence threshold from 40 to 60 reduced edges by **56%** and nodes by **39%**, highlighting how strict criteria refine the network to core disease relationships.  
+- **Stable Disease Hubs:** *Essential hypertension* and *Hyperlipidemia* remained highly central even under stricter thresholds, representing the backbone of chronic multimorbidity.  
+- **Clinical Insight:** The refined network focuses on persistent disease pairings fundamental to chronic disease management, though some rare but meaningful connections are filtered out.  
+
+---
+
+### ❤️ 3. Condition–Risk Factor Correlation Network  
+- **Moderate Modularity:** The network displayed a clustering coefficient of **0.2822** and near-neutral assortativity (**–0.0003**), showing slightly disassortative mixing—highly connected nodes tend to link to less connected ones.  
+- **Influential Biomarkers:** Hematologic indicators such as **MCHC** and **MCV** had high eigenvector centrality (>0.13), highlighting their influence in cardiovascular risk modeling.  
+- **Clinical Insight:** Modular biomarker clusters align with physiological pathways, improving the interpretability of disease-risk linkages for precision medicine applications.  
+
+---
+
+### 🧠 Overall Interpretation  
+- Each network demonstrates **unique structural patterns**—from centralized hubs and bridging edges to modular biomarker groups.  
+- These properties reveal hidden medical dependencies and highlight critical connections that can inform **predictive modeling, treatment optimization, and chronic disease prevention** strategies.  
+
 
 ---
 
