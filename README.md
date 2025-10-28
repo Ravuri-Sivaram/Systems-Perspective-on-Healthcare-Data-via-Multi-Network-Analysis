@@ -86,7 +86,6 @@ Explores how diseases correlate with demographic and cardiovascular risk factors
 
 ## 👨‍💻 Author  
 **Ravuri Sivaram**  
-Graduate Student - University of South Florida
 
 ---
 
